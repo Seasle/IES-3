@@ -34,6 +34,10 @@ const predict = (x) => {
     return ys;
 };
 
+/********************************
+ * Functions
+ ********************************/
+
 const draw = () => {
     if (dragging) {
         points.push({
@@ -113,5 +117,9 @@ const init = () => {
 
     requestAnimationFrame(draw);
 };
+
+/********************************
+ * Events
+ ********************************/
 
 window.addEventListener('load', init);
